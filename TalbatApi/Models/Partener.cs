@@ -37,6 +37,6 @@ namespace TalbatApi.Models
         public string CPassword { get; set; }
 
         [Required]
-        public string Approval { get; set; }
+        public int Approval { get; set; }
     }
 }
