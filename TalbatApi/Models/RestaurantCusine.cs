@@ -7,14 +7,20 @@ using System.Web;
 
 namespace TalbatApi.Models
 {
-    public class Menu
+    public class RestaurantCusine
     {
-        
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MenuID { get; set; }
         [ForeignKey("Restaurant")]
-        public int RestaurantID { get; set; }
+        [Column(Order = 0)]
+        public int RestaurantId { get; set; }
+
+        [Key]
+        [ForeignKey("Cuisine")]
+        [Column(Order = 1)]
+        public int CuisineId { get; set; }
+
         public virtual Restaurant Restaurant { get; set; }
+        public virtual Cuisine Cuisine { get; set; }
+
     }
 }

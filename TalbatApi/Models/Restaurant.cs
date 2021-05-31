@@ -35,6 +35,13 @@ namespace TalbatApi.Models
         [Required]
         public int EndWorkingHours { get; set; }
         [Required]
+        public DateTime Date { get; set; }
+
+        [Required]
+
+
+
+
         public int MaxDeliveryTime { get; set; }
         [ForeignKey("Partener")]
         public int PartenerID { get; set; }
@@ -42,6 +49,9 @@ namespace TalbatApi.Models
         [ForeignKey("Address")]
         public int AddressID { get; set; }
         public virtual Address Address { get; set; }
+
+        public virtual List<RestaurantCustomer> MemberComments { get; set; }
+        public virtual List<RestaurantCusine> restaurantCusines { get; set; }
 
     }
 }

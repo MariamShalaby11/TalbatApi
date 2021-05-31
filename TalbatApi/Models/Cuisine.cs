@@ -16,8 +16,6 @@ namespace TalbatApi.Models
         [Required]
         public string CuisineName { get; set; }
 
-        public int RestaurantId { get; set; }
-
-        public virtual Restaurant Restaurant { get; set; }
+        public virtual List<RestaurantCusine> restaurantCusines { get; set; }
     }
 }

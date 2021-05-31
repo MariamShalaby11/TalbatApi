@@ -32,6 +32,7 @@ namespace TalbatApi.Models
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Partener> Parteners { get; set; }
         public virtual DbSet<RestaurantCustomer> RestaurantCustomers { get; set; }
+        public virtual DbSet<RestaurantCusine> RestaurantCusines { get; set; }
 
 
     }

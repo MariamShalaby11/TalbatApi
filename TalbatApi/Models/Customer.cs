@@ -36,7 +36,8 @@ namespace TalbatApi.Models
         [DisplayName("Confirm Password")]
         public string CPassword { get; set; }
 
-        
+        public virtual List<RestaurantCustomer> MemberComments { get; set; }
+
 
     }
 }

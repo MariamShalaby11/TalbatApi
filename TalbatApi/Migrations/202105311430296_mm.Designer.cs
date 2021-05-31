@@ -7,13 +7,13 @@ namespace TalbatApi.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class mm : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mm));
         
         string IMigrationMetadata.Id
         {
-            get { return "202105191257381_first"; }
+            get { return "202105311430296_mm"; }
         }
         
         string IMigrationMetadata.Source
