@@ -12,15 +12,19 @@ namespace TalbatApi.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AddressId { get; set; }
-        [Required]
-        public int BuildingNo { get; set; }
-        [Required]
+
+        public int? BuildingNo { get; set; }
+
         public string Street { get; set; }
 
-        public int floorNo { get; set; }
+        public int? floorNo { get; set; }
 
         public string LandMark { get; set; }
         [Required]
         public string city { get; set; }
+
+        public double lat { set; get; }
+        public double lang { set; get; }
+
     }
 }
