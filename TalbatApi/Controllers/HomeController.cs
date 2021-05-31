@@ -13,6 +13,7 @@ namespace TalbatApi.Controllers
     {
         private Talabat db = new Talabat();
         [HttpGet]
+
         public ActionResult RestrauntAddresses()
         {
             var restaurants = db.Restaurants.Include(r => r.Address).Select(c => c.Address.city).Distinct();

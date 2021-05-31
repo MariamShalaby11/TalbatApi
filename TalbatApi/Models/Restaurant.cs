@@ -28,14 +28,13 @@ namespace TalbatApi.Models
         public string Description { get; set; }
 
         [DisplayName("Website")]
-        [RegularExpression("^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$")]
         public string WebSite { get; set; }
         [Required]
         public int StartWorkingHours { get; set; }
         [Required]
         public int EndWorkingHours { get; set; }
-        [Required]
-        public DateTime Date { get; set; }
+        
+        public DateTime? Date { get; set; }
 
         [Required]
 

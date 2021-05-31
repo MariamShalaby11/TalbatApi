@@ -9,12 +9,12 @@ using TalbatApi.Models;
 namespace TalbatApi.Controllers
 {
     public class RestaurantController : ApiController
-<<<<<<< Updated upstream
+
     {
         //comment22
-=======
-    { ///aaaaaaa
->>>>>>> Stashed changes
+
+
+
         Talabat db = new Talabat();
 
         //get all restaurants

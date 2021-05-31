@@ -26,8 +26,8 @@ namespace TalbatApi.Models
 
         public int SubTotal { get; set; }
 
-
-        public int DeliveryFee { get; set; }
+        public string status { get; set; }
+        public int DeliveryFee { get; set;}
         [ForeignKey("Restaurant")]
         public int RestId { get; set; }
         public virtual Restaurant Restaurant { get; set; }

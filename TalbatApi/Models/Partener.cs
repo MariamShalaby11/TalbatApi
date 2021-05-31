@@ -26,7 +26,6 @@ namespace TalbatApi.Models
         public string Username { get; set; }
 
         [Required]
-        [RegularExpression(@"[a-zA-Z0-9_]*@[A-Za-z]+.[a-zA-Z]{2,4}", ErrorMessage = "please enter email as ****@****.***")]
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
